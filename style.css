@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Domine", serif;
+}
+
+
+#starbucks-icon{
+    display: inline-block;
+    background-image: url('./assets/logo.svg') ;
+    margin: 0 25px 0 25px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+
+}
+header{
+    height: 90px;
+}
+nav{
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+
+section img{
+    width: 50%;
+}
+
+/* utilizando la coma se pueden agrupar reglas para diferentes elementos */
+.navBarButton, #starbucks-icon{
+    vertical-align: middle;
+}
+
+.navBarButton{
+    display: inline-block;
+    font-weight: bold;
+    color: #212121;
+    margin: 0 25px;
+}
+.navBarButton a{
+    color: #212121;
+    padding: 30px;
+}
+a:hover{
+    border-bottom: 8px solid #00754a;
+    color: #00754a ;
+
+}
+.BANNER{
+    display: flex;
+    background-color: #1e3932;
+    color: #ffffff;
+    text-align: center;
+}
+
+.BANNER h1{
+    font-size: 28px;
+    margin-bottom: 25px;
+
+}
+
+.BANNER p{
+    font-size: 18.5px;
+    line-height: 35px;
+    
+}
+
+.BANNER div{
+    align-content: center;
+    padding: 0 80px;
+}
+
