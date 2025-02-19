@@ -21,7 +21,7 @@ nav{
     padding: 20px 0;
     background-color: #ffffff;
 }
-a{
+nav a{
     text-decoration:none;
     color: black;
 }
@@ -45,7 +45,7 @@ section img{
     color: #212121;
     padding: 30px;
 }
-a:hover{
+nav a:hover{
     border-bottom: 8px solid #00754a;
     color: #00754a ;
 
@@ -53,8 +53,9 @@ a:hover{
 .BANNER{
     display: flex;
     background-color: #1e3932;
-    color: #ffffff;
+    color: white;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .BANNER h1{
@@ -74,3 +75,119 @@ a:hover{
     padding: 0 80px;
 }
 
+/* Segunda seccion de arriba hacia abajo */
+
+#trescafes{
+    background-color: #cae390;
+    color: #1e3932;
+}
+
+/* Tercera seccion de arriba hacia abajo */
+
+#cafetostado{
+    background-color: #f5e1a4;
+    color: #204285;
+}
+/* Cuarta parte */
+
+#Bebidaenmano{
+    background-color: #1e3932;
+    color: white;
+}
+
+/* Quinta parte */
+
+#mercancia{
+    background-color: #474a6f;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer{
+    background-color: #ffffffd7;
+    padding: 20px 0;
+    color: rgba(136, 121, 121, 0.647);
+    text-align: center;
+
+}
+
+.footer_container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_links{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+/* line-height sirve para separar texto */
+.column{
+    line-height: 40px;
+    margin: 0 40px;
+}
+
+.footer_container a{
+text-decoration: none;
+}
+.footer_container h3{
+    color: black;
+}
+.Socialmedia{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(116, 114, 114)
+}
+
+.Socialmedia a{
+    width: 40px;
+    height: 40px;
+    
+}
+
+#fb_icon{
+    background-image: url('./assets/fb_icon.png');
+    background-size: cover;
+}
+
+#Ig_icon{
+    background-image: url('./assets/Ig_icon.png');
+    background-size: cover;
+}
+#X_icon{
+    background-image: url(./assets/X_icon.png);
+    background-size: cover;
+}
+#YT_icon{
+    background-image: url(./assets/YT_icon.png);
+    background-size: cover;
+}
+
+.footer_second{
+    color: #999;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.Derechos{
+    margin-top: 20px;
+    color: #999;
+    text-align: center;
+    display: block;
+    font-size: .875rem;
+    font-weight: 300;
+}
