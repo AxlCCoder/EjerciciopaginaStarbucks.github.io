@@ -73,26 +73,30 @@
         border-bottom: 8px solid #00754a;
         color: #00754a ;
     } */ 
+body, html{
+width: 100vw;
+height: 100vh;
+/* overflow: hidden; */
 
+}
+
+header, main{
+    width: 100%;
+
+
+}
     .navbar {
         display: flex;
         padding: 20px;
         justify-content: space-between;
         align-items: center;
-        background-color: #ffffff;
+        background-color: white;
         color: black;
         border-bottom: 1px solid #ddd;
         margin: 0;
-        max-width: 100%;
+        width: 100%;
     }
 
-@media screen and (min-width: 321px){
-    display: flex ;
-
-
-
-    
-}
 
 
     .navbar-left a:hover{
@@ -130,62 +134,72 @@
     
       /* Estilos para los botones */
     .btn {
-        padding: 7px 16px; /* Espaciado interno */
+        padding: 7px 16px; 
         background-color: none;
-        background-color: white; /* Color de fondo */
+        background-color: white; 
         line-height: 1;
         text-align: center;
-        color: rgb(0, 0, 0); /* Color del texto */
-        border-radius: 50px; /* Bordes redondeados */
-        border:black 1px solid; /* Sin borde */
-        cursor: pointer; /* Cambia el cursor al pasar el mouse */
-        transition: all .2s ease; /* Transición suave */
+        color: rgb(0, 0, 0); 
+        border-radius: 50px; 
+        border:black 1px solid; 
+        cursor: pointer; 
+        transition: all .2s ease; 
             }
     .btn1{
         font-weight: 600;
-        padding: 7px 16px; /* Espaciado interno */
-        line-height: 1;
+        padding: 7px 16px; 
         text-align: center;
         text-decoration: none;
         background: none;
-        background-color: black ; /* Color de fondo */
-        color: #ffffff; /* Color del texto */
-        border-radius: 50px; /* Bordes redondeados */
-        border: 1px solid; /* Sin borde */
-        cursor: pointer; /* Cambia el cursor al pasar el mouse */
-        transition: all 0.2s ease; /* Transición suave */
+        background-color: black ; 
+        color: #ffffff; 
+        border-radius: 50px; 
+        border: 1px solid; 
+        cursor: pointer; 
+        transition: all 0.2s ease; 
             }
 
 .BANNER{
     display: flex;
+    overflow: hidden;
     background-color: #1e3932;
     color: white;
     text-align: center;
     margin-bottom: 30px;
     margin-right: 15px;
     margin-left: 15px;
-    max-width: 100%;
-    flex: 1;
+    width: 100%;
+
 }
 
+.BANNER img{
+/* background-color: #cae390; */
+height: auto;
+width: 60rem;
+
+
+
+}
 .BANNER h1{
     font-size: 28px;
     margin-bottom: 25px;
-    max-width: 100%;
+    
 
 }
 
 .BANNER p{
     font-size: 18.5px;
     line-height: 35px;
-    max-width: 100%;
+
     
 }
 
 .BANNER div{
     align-content: center;
     padding: 0 80px;
-    max-width: 100%;
+    flex-basis: 50%;
+    flex: 1;
+
 }
 
 /* Segunda seccion de arriba hacia abajo */
@@ -206,10 +220,8 @@
 /* Cuarta parte */
 
 #Bebidaenmano{
-    height: 685px;
     background-color: #1e3932;
     color: white;
-    max-width: 100%;
 }
 
 /* Quinta parte */
@@ -273,6 +285,7 @@ width: 100%;
 }
 
 footer{
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);;
     background-color: #ffffffd7;
     padding: 20px 0;
     color: rgba(136, 121, 121, 0.647);
@@ -305,13 +318,13 @@ text-decoration: none;
     color: black;
 }
 .Socialmedia{
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);;
     display: flex;
     gap: 15px;
     width: 100%;
     justify-content: center;
     margin-bottom: 20px;
     padding-top: 40px;
-    border-top: 1px solid rgb(116, 114, 114)
 }
 
 .Socialmedia a{
@@ -356,3 +369,17 @@ text-decoration: none;
     font-size: .875rem;
     font-weight: 300;
 }
+
+@media (max-width: 60rem){
+    .BANNER{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+.BANNER img{
+    width: 100%;
+
+}
+}
+
